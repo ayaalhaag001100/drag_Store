@@ -8,6 +8,7 @@ use  App\Models\category;
 
 class Products extends Controller
 {
+  ////
     public function ShowProducts(Request $request){
         $idcategory=$request->id;
         $products=json_decode(product::all());
